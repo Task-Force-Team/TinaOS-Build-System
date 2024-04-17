@@ -12,6 +12,7 @@ class menu:
         if self.maintainer == 'Unknown':
             self.maintainer = 'Dont forget to set your name!'
         self.mods = 'TinaOS_Root'
+        self.its_here = False
         self.app_title = 'Welcome to TinaOS Build System!'
         self.app_body = f'Choose one option {self.maintainer}'
         self.draw_mainmenu()
@@ -26,7 +27,10 @@ class menu:
             print('looks like there is no name saved for maintainer name\nplease select one and try again')
             return
         else:
-            #shutil.copy2(self.dir, 'super.img')
+            if os.path.exists('super.img'):
+                self.its_here = True
+            elif self.its_here == False: 
+                shutil.copy2(self.dir, 'super.img')
             #os.system(f'simg2img.exe super.img super.ext4.img')
             os.system(f'powershell ./lpunpack.py --slot=0 .\\super.img .\\partitions\\')
     def select_super(self):
