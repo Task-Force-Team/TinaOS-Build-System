@@ -12,7 +12,7 @@ class menu:
         if self.maintainer == 'Unknown':
             self.maintainer = 'Dont forget to set your name!'
         self.mods = 'TinaOS_Root'
-        self.app_title = 'Welcome to TinaOS Auto Builder!'
+        self.app_title = 'Welcome to TinaOS Build System!'
         self.app_body = f'Choose one option {self.maintainer}'
         self.draw_mainmenu()
     def sel_name(self):
