@@ -54,7 +54,7 @@ class menu:
             if a == 'hes a dumbass, even dont selected correct option!':
                 print("Invalid option.")
                 return
-            if choice == 4: break
+            if choice == 4: exit()
     def goif(self, ch):
         ch = int(ch)
         if ch == 1:
