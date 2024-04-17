@@ -1,0 +1,18 @@
+Error Opening \\.\PhysicalDrive2. Error Code 2
+No of disks 2
+Scanning \\.\PhysicalDrive0
+index 0 ID 7 size 215040000 
+index 1 ID 7 size 215037952 
+index 2 ID 7 size 215040000 
+index 3 ID F size 330600448 
+index 4 ID 7 size 215040000 
+index 5 ID 7 size 115556352 
+Scanning \\.\PhysicalDrive1
+index 0 ID 7 size 716800 
+index 1 ID 7 size 522393600 
+index 2 ID 7 size 52224480 
+index 3 ID F size 401405954 
+index 4 ID 7 size 401405952 
+Partition Table Error on J:/Unified Builder/mi_ext_a.img
+Invalid End of sector markerBad Super Block. The drive  is not ext2 formatted.
+No valid Ext2 Partitions found in the disk image.
